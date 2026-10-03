@@ -92,6 +92,10 @@ function App() {
               </div>
 
               <div className='singleLabel'>
+                <p className='theLabel'>UI/UX design</p>
+              </div>
+
+              <div className='singleLabel'>
                 <p className='theLabel'>3D printing</p>
               </div>
               
@@ -99,16 +103,11 @@ function App() {
                 <p className='theLabel'>3D Modeling</p>
               </div>
 
-              <div className='singleLabel'>
-                <p className='theLabel'>UI/UX design</p>
-              </div>
+              
 
             </div>
 
           </section>
-
-
-       
 
 
           <div id="buttons" className="basicCard">

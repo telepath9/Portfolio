@@ -95,8 +95,8 @@
 
 .linkIcons{
   margin: 0px 12px 0px 0px;
-  height: 50px;
-  width: 50px;
+  height: 48px;
+  width: 48px;
 }
 
 
@@ -121,7 +121,8 @@
   border-radius: 16px;
   /*border-radius: 8px;*/
   margin: 10px 24px;
-  padding: 0px 0px;
+  /*padding: min(20px, 3.5%) min(24px, 4%);*/
+  padding: 0.5rem min(1.5rem, 4%);
   /*cursor: pointer;*/
 }
 
@@ -134,13 +135,15 @@
   border: solid black 3px;
   border-radius: 16px;
   margin: 10px 24px;
-  padding: 0px 24px;
+  /*padding: 0px 24px;      1rem = 16px*/
+  
+  padding: 0.5rem min(1.5rem, 4%);
   /*cursor: pointer;*/
   text-align: left;
 }
 
 .theLabel{
-  margin: 15px 0px;
+  margin: 0px;
 }
 
 
@@ -152,22 +155,26 @@
 }*/
 
 #bambu{
-  margin: 3px 12px;
-  height: 50px;
-  width: 50px;
+  margin: 0px 12px;
+  height: 48px;
+  width: 48px;
 }
 
 a:link{
   color: #000000;
-  padding: 20px 24px;
+  /*padding: 20px 24px;*/
+  /*padding: min(20px, 3.5%) min(24px, 4%);*/
+
   text-decoration:none;
+  text-align: left;
 
 }
 
 a:hover {
-  background-color: #E3F2FD;
+  background-color: #0f71b7;
   text-decoration: none;
-  border-radius: 16px 0px 0px 16px;
+  border-radius: 12px 0px 0px 12px;
+  
 }
 
 a:visited {
@@ -184,7 +191,11 @@ a:visited {
   color: #000;
   box-shadow: 5px 5px 0 0 #000;
   font-weight: 700;
-  padding: 12px 20px;
+  /*padding: 12px 20px;*/
+  /*padding: min(0.8, 3%) min(6px, 2.5%);*/
+  padding: 0.8rem min(0.9rem, 4%);
+  
+
   cursor: pointer;
   transition: all 0.1s ease;
 }
@@ -202,10 +213,35 @@ a:visited {
 #buttons{
   display: flex;
   justify-content: space-between;
+  margin: 24px 0px 0px 0px;
 }
 
+@media (max-width: 500px){
+
+  #name{
+    margin: 10px 0px 0px 0px;
+  }
+
+  .icons{
+    margin: 10px;
+  }
+
+  #buttons{
+    flex-direction: column;
+    
+  }
+
+  .btn{
+    margin: 0px 0px 20px 0px;
+  }
+
+
+
+}
+
+
 #reset{
-  background: #a1a1a1;
+  background: #ffe0e0;
 }
 
 /* Never forget focus 
