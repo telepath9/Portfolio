@@ -43,19 +43,23 @@ function App() {
             </div>
 
             <div className='singleLink'>
-              <a className="links" href="https://github.com/telepath9/ESPclock">ESPclock on Github</a>
+              <a className="links" href="https://github.com/telepath9/ESPclock">ESPclock on Github
               <img className='linkIcons' src={githubIcon} />
+              </a>
+              
             </div>
 
             
 
             <div className='singleLink'>
-              <a className="links" href="https://makerworld.com/en/@telepath" >MakerWorld</a>
-              <img className="linkIcons" id="bambu" src={bambuIcon} />
+              <a className="links" href="https://makerworld.com/en/@telepath" >MakerWorld 
+                <img className="linkIcons" id="bambu" src={bambuIcon} />
+              </a>
+              
             </div>  
 
             <div className='singleLink'>
-              <a  href="https://www.linkedin.com/in/davide-montalbano-82ba1425a/" >LinkedIn</a>
+              <a  href="https://www.linkedin.com/in/davide-montalbano-82ba1425a/">LinkedIn</a>
             </div>
 
             </section>

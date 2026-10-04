@@ -21,7 +21,6 @@
 
 #h1div{
   text-align: left;
-
 }
 
 #title1{
@@ -38,7 +37,6 @@
 
 #double_avatar{
   display: flex;
-  
   /*justify-content: space-between;*/
   justify-content: space-evenly;
   flex-wrap: wrap;
@@ -70,7 +68,6 @@
   font-weight: 700;
   font-style: normal;
   margin: 0px;
-
   background: #c1fba4;
 }
 
@@ -104,10 +101,13 @@
 
 .linkIcons{
   /*margin: 0px 12px 0px 0px;*/
+  
+  
+
   margin: 0px;
   height: 48px;
   width: 48px;
-  z-index: 1;
+  z-index: -1;
 }
 
 
@@ -122,32 +122,52 @@
    background: #ffffff00;
 }*/
 
+
 @keyframes expand{
+
+  from {padding: 1rem min(1.5rem, 4%)}
+  to   {padding: 1.5rem min(2.5rem, 5%)}
+  /*
   from {padding: 0px min(1.2rem, 3%) 0px 0px;}
-  to {padding: 0.8rem min(1.2rem, 3%) 0.8rem 0.8rem;}
+  to {padding: 0.8rem min(1.2rem, 3%) 0.8rem 0.8rem;}*/
 }
 
 .singleLink{
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  
+
   font-family:"Inter", sans-serif;
   font-size: 23px;
   border: solid black 3px;
   border-radius: 16px;
   /*border-radius: 8px;*/
   margin: 10px 24px;
-  /*padding: min(20px, 3.5%) min(24px, 4%);*/
-  /*padding: 0.5rem min(1.5rem, 4%); <--- latest */
 
-  padding: 0px min(1.2rem, 3%) 0px 0px;
+  text-align: left;
+  /*padding: 0px min(1.2rem, 3%) 0px 0px;*/
+  padding: 0px;
   background: transparent;
-  z-index: 2;
+  z-index: 1;
  
-  transition: padding 0.2s ;  /*on :hover OFF*/
+  /*
+  transition: padding 0.2s ;*/  /*on :hover OFF*/
 
 }
 
+.singleLink:hover {
+  /*background-color: #c2d9e9;*/
+  text-decoration: none;
+  /*
+  animation-name: expand;
+  animation-duration: 0.2s;
+  padding: 0.8rem min(1.2rem, 3%) 0.8rem 0.8rem;*/
+  /*border-radius: 12px 0px 0px 12px;*/
+  /*padding: 0.5rem min(1.2rem, 3%) 0.5rem 0px;*/
+  
+}
 
 
 .singleLabel{
@@ -170,9 +190,7 @@
   margin: 0px;
 }
 
-
-/*
-.links{
+/*.links{
   margin: 0px 0px;
   padding: 0px 0px;
 
@@ -186,33 +204,36 @@
 }
 
 a:link{
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   color: #000000;
   /*padding: 20px 24px;*/
   /*padding: min(20px, 3.5%) min(24px, 4%);*/
-
+  width: 100%;
+  background:transparent;
   text-decoration:none;
-  text-align: left;
-  padding: 1rem min(1.5rem, 4%);
+  
+  
+  padding: 0.8rem min(1.5rem, 4%);
+
+
+  transition: padding 0.2s ;*/  /*on :hover OFF*/
+ 
+
 }
 
 a:link:hover{
   color: #000000;
-  background-color: #c2d9e9;
-  padding: 1rem min(1.5rem, 4%);
+  background-color: #49a8eb59;
+  /*padding: 1rem min(1.5rem, 4%);*/
   margin: 0px;
   text-decoration: none;
-  border-radius: 13px 0px 0px 13px;
-}
-
-
-.singleLink:hover {
-  background-color: #c2d9e9;
-  text-decoration: none;
+  border-radius: 13px;
   animation-name: expand;
   animation-duration: 0.2s;
-  padding: 0.8rem min(1.2rem, 3%) 0.8rem 0.8rem;
-  /*border-radius: 12px 0px 0px 12px;*/
-  /*padding: 0.5rem min(1.2rem, 3%) 0.5rem 0px;*/
+  padding: 1.5rem min(2.5rem, 5%);
   
 }
 
