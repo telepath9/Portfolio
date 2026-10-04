@@ -4,7 +4,7 @@
   max-width: 452px;
   margin: 0px auto;
  
-  padding: 0px 24px;
+  padding: 20px 24px;
   border-radius: 26px;
   background: #7FDBDA;
   border: 3px solid #000;
@@ -30,14 +30,22 @@
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
-
+  margin: 0px 0px 10px 0px;
+  /*border-radius: 24px;
+  border: solid black 4px;
+  padding: 20px;*/
 }
 
 #double_avatar{
   display: flex;
+  
   /*justify-content: space-between;*/
   justify-content: space-evenly;
   flex-wrap: wrap;
+  margin: 0px 0px 14px 0px;
+  /*border-radius: 24px;
+  border: solid black 4px;
+  padding: 10px;*/
   /*background: #f5f0e8;*/
   /*text-align: center;*/
 }
@@ -57,7 +65,7 @@
   border-bottom: solid black 4px;
   padding: 16px 24px;
   font-family: "Space Grotesk", sans-serif;
-  font-size:  25px;
+  font-size: 1.5625rem; /*25px;*/
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
@@ -71,8 +79,9 @@
   border-radius: 28px;
 
   border: solid black 4px;
-  margin: 25px 0px 0px 0px;
-    background: #ffffff;
+  margin: 0px 0px 25px 0px;
+  background: #ffffff;
+  z-index: 0;
   
 }
 
@@ -94,9 +103,11 @@
 }
 
 .linkIcons{
-  margin: 0px 12px 0px 0px;
+  /*margin: 0px 12px 0px 0px;*/
+  margin: 0px;
   height: 48px;
   width: 48px;
+  z-index: 1;
 }
 
 
@@ -111,6 +122,11 @@
    background: #ffffff00;
 }*/
 
+@keyframes expand{
+  from {padding: 0px min(1.2rem, 3%) 0px 0px;}
+  to {padding: 0.8rem min(1.2rem, 3%) 0.8rem 0.8rem;}
+}
+
 .singleLink{
   display: flex;
   justify-content: space-between;
@@ -122,16 +138,24 @@
   /*border-radius: 8px;*/
   margin: 10px 24px;
   /*padding: min(20px, 3.5%) min(24px, 4%);*/
-  padding: 0.5rem min(1.5rem, 4%);
-  /*cursor: pointer;*/
+  /*padding: 0.5rem min(1.5rem, 4%); <--- latest */
+
+  padding: 0px min(1.2rem, 3%) 0px 0px;
+  background: transparent;
+  z-index: 2;
+ 
+  transition: padding 0.2s ;  /*on :hover OFF*/
+
 }
+
+
 
 .singleLabel{
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-family:"Inter", sans-serif;
-  font-size: 23px;
+  font-size: 1.4375rem; /*23px;*/
   border: solid black 3px;
   border-radius: 16px;
   margin: 10px 24px;
@@ -155,7 +179,8 @@
 }*/
 
 #bambu{
-  margin: 0px 12px;
+  /*margin: 0px 12px;*/
+  margin: 0px;
   height: 48px;
   width: 48px;
 }
@@ -167,13 +192,27 @@ a:link{
 
   text-decoration:none;
   text-align: left;
-
+  padding: 1rem min(1.5rem, 4%);
 }
 
-a:hover {
-  background-color: #0f71b7;
+a:link:hover{
+  color: #000000;
+  background-color: #c2d9e9;
+  padding: 1rem min(1.5rem, 4%);
+  margin: 0px;
   text-decoration: none;
-  border-radius: 12px 0px 0px 12px;
+  border-radius: 13px 0px 0px 13px;
+}
+
+
+.singleLink:hover {
+  background-color: #c2d9e9;
+  text-decoration: none;
+  animation-name: expand;
+  animation-duration: 0.2s;
+  padding: 0.8rem min(1.2rem, 3%) 0.8rem 0.8rem;
+  /*border-radius: 12px 0px 0px 12px;*/
+  /*padding: 0.5rem min(1.2rem, 3%) 0.5rem 0px;*/
   
 }
 
@@ -195,7 +234,7 @@ a:visited {
   /*padding: min(0.8, 3%) min(6px, 2.5%);*/
   padding: 0.8rem min(0.9rem, 4%);
   
-
+  
   cursor: pointer;
   transition: all 0.1s ease;
 }
@@ -213,13 +252,21 @@ a:visited {
 #buttons{
   display: flex;
   justify-content: space-between;
-  margin: 24px 0px 0px 0px;
+  margin: 0px 0px 10px 0px;
 }
 
 @media (max-width: 500px){
 
+  .flex_container{
+    padding: 14px 14px;
+  }
+
   #name{
     margin: 10px 0px 0px 0px;
+  }
+
+  .title2, .singleLink, .singleLabel{
+    font-size: 1.125rem;
   }
 
   .icons{
@@ -228,11 +275,11 @@ a:visited {
 
   #buttons{
     flex-direction: column;
-    
+    margin: 0px;
   }
 
   .btn{
-    margin: 0px 0px 20px 0px;
+    margin: 0px 0px 24px 0px;
   }
 
 

@@ -11,6 +11,18 @@
   background-position: -1px -1px, -1px -1px, -0.5px -0.5px, -0.5px -0.5px;  
 }
 
+html {
+  font-size: 16px; /* Base size */
+}
+
+/*
+@media (max-width: 500px) {
+  html {
+    font-size: 16px; /* Base size 
+  }   
+
+}*/
+
 /*fullscreen bg
 html { 
   background: url(./assets/s1.jpg) no-repeat center center fixed; 

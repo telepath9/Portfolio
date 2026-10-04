@@ -55,7 +55,7 @@ function App() {
             </div>  
 
             <div className='singleLink'>
-              <a className="links" href="https://www.linkedin.com/in/davide-montalbano-82ba1425a/" >LinkedIn</a>
+              <a  href="https://www.linkedin.com/in/davide-montalbano-82ba1425a/" >LinkedIn</a>
             </div>
 
             </section>
