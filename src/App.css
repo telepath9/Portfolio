@@ -126,7 +126,7 @@
 @keyframes expand{
 
   from {padding: 1rem min(1.5rem, 4%)}
-  to   {padding: 1.5rem min(2.5rem, 5%)}
+  to   {padding: 1.8rem min(2.5rem, 5%)}
   /*
   from {padding: 0px min(1.2rem, 3%) 0px 0px;}
   to {padding: 0.8rem min(1.2rem, 3%) 0.8rem 0.8rem;}*/
@@ -205,6 +205,8 @@
 
 a:link{
 
+  min-height: 40px;
+  max-height: 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -226,14 +228,14 @@ a:link{
 
 a:link:hover{
   color: #000000;
-  background-color: #49a8eb59;
+  background-color: rgba(73, 168, 235, 0.349);
   /*padding: 1rem min(1.5rem, 4%);*/
   margin: 0px;
   text-decoration: none;
   border-radius: 13px;
   animation-name: expand;
   animation-duration: 0.2s;
-  padding: 1.5rem min(2.5rem, 5%);
+  padding: 1.8rem min(2.5rem, 5%);
   
 }
 

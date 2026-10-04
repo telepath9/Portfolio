@@ -47,13 +47,25 @@ export function CounterButton(){
     const [counter, setCounter] = useState(0); 
 
     function resetCounter() {
-
         setCounter(0);
+    }
 
+    function getRandomInt(min:number, max: number) {    //0 and 255 included
+        const minCeiled = Math.ceil(min);
+        const maxFloored = Math.floor(max);
+        return Math.floor(Math.random() * (maxFloored - minCeiled + 1) + minCeiled); // The maximum is inclusive and the minimum is inclusive
     }
 
     function handleClick() {
         setCounter(counter +1);
+
+        const butCheck = document.getElementById("count") ;
+        if(butCheck){
+            console.log("button found!!");
+            const counterButton = butCheck as HTMLButtonElement;
+           
+            counterButton.style.backgroundColor= `rgb( ${getRandomInt(0,255)}, ${getRandomInt(0,255)}, ${getRandomInt(0,255)})`;
+        }
     }
 
     return (
@@ -62,7 +74,7 @@ export function CounterButton(){
             Reset
         </button>
 
-        <button type="button" className="btn" onClick={handleClick}>
+        <button type="button" className="btn" id="count" onClick={handleClick}>
             You clicked {counter} times
         </button>
         </>

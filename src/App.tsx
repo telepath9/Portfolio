@@ -17,7 +17,7 @@ import cppIcon from "./assets/cpp.svg"
 import reactIcon from "./assets/react.svg"
 import bambuIcon from "./assets/bambulab.svg"
 import githubIcon from "./assets/github.svg"
-
+import linkedinIcon from "./assets/linkedin.svg"
 
 function App() {
 
@@ -59,7 +59,9 @@ function App() {
             </div>  
 
             <div className='singleLink'>
-              <a  href="https://www.linkedin.com/in/davide-montalbano-82ba1425a/">LinkedIn</a>
+              <a  href="https://www.linkedin.com/in/davide-montalbano-82ba1425a/">LinkedIn
+                <img className="linkIcons" src={linkedinIcon} />
+              </a>
             </div>
 
             </section>
@@ -118,7 +120,7 @@ function App() {
            <ColorButton >
            </ColorButton>
           
-          <CounterButton>
+          <CounterButton >
           </CounterButton>
 
 
