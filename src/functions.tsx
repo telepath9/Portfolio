@@ -58,12 +58,10 @@ export function CounterButton(){
 
     function handleClick() {
         setCounter(counter +1);
-
         const butCheck = document.getElementById("count") ;
+        
         if(butCheck){
-            console.log("button found!!");
             const counterButton = butCheck as HTMLButtonElement;
-           
             counterButton.style.backgroundColor= `rgb( ${getRandomInt(0,255)}, ${getRandomInt(0,255)}, ${getRandomInt(0,255)})`;
         }
     }

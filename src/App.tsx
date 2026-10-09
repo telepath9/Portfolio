@@ -23,9 +23,9 @@ function App() {
 
   return(<>
       <div id="flex_contId" className="flex_container">
-        <div id="h1div">
+        {/*<div id="h1div">
           <h1 id="title1">My Portfolio</h1>
-        </div>
+        </div>*/}
 
         <div id="double_avatar"> 
           <Avatar logoPath={teleLogo} size={120}></Avatar>
@@ -59,7 +59,7 @@ function App() {
             </div>  
 
             <div className='singleLink'>
-              <a  href="https://www.linkedin.com/in/davide-montalbano-82ba1425a/">LinkedIn
+              <a href="https://www.linkedin.com/in/davide-montalbano-82ba1425a/">LinkedIn
                 <img className="linkIcons" src={linkedinIcon} />
               </a>
             </div>
