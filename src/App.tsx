@@ -22,22 +22,23 @@ import linkedinIcon from "./assets/linkedin.svg"
 function App() {
 
   return(<>
-      <div id="flex_contId" className="flex_container">
+      <div className="grid_container" id="grid_contId">
         {/*<div id="h1div">
           <h1 id="title1">My Portfolio</h1>
         </div>*/}
 
-        <div id="double_avatar"> 
+        <div id="double_avatar" style={{gridArea: "box-1"}}> 
           <Avatar logoPath={teleLogo} size={120}></Avatar>
-          <h2 id="name">Davide Montalbano  <br></br> a.k.a. telepath</h2>
+          <h2 id="name">Davide Montalbano  <br></br> @telepath</h2>
         </div>
+       
 
-        <section className='sections'>
+        <section className='sections' style={{gridArea: "box-2"}}>
           <p className="title2">
               My links
           </p>
          
-          <section className="basicCard"> 
+          <section className="basicCard" id="linkSection"> 
             <div className='singleLink'>
               <a className="links" href="https://telepath9.github.io/ESPclock/">ESPclock Web Flasher</a>
             </div>
@@ -46,20 +47,16 @@ function App() {
               <a className="links" href="https://github.com/telepath9/ESPclock">ESPclock on Github
               <img className='linkIcons' src={githubIcon} />
               </a>
-              
             </div>
-
-            
 
             <div className='singleLink'>
               <a className="links" href="https://makerworld.com/en/@telepath" >MakerWorld 
                 <img className="linkIcons" id="bambu" src={bambuIcon} />
               </a>
-              
             </div>  
 
             <div className='singleLink'>
-              <a href="https://www.linkedin.com/in/davide-montalbano-82ba1425a/">LinkedIn
+              <a className="links" href="https://www.linkedin.com/in/davide-montalbano-82ba1425a/">LinkedIn
                 <img className="linkIcons" src={linkedinIcon} />
               </a>
             </div>
@@ -67,11 +64,11 @@ function App() {
             </section>
           </section>
        
-          <section className='sections'>
+          <section className='sections' style={{gridArea: "box-3"}}>
             <p className="title2">
               My tech stack
             </p>
-            <div className="lang_icons">
+            <div className="techstack_icons">
               <img className='icons' src={cIcon} />
               <img className='icons' src={cppIcon} />
               <img className='icons' src={htmlIcon} />
@@ -83,11 +80,11 @@ function App() {
             </div>
           </section>
 
-          <section className='sections'>
+          <section className='sections' style={{gridArea: "box-4"}}>
             <p className="title2">
             My interests
             </p>
-            <div className="basicCard">
+            <section className="basicCard">
 
               <div className='singleLabel'>
                 <p className='theLabel' >Web developement</p>
@@ -106,19 +103,17 @@ function App() {
               </div>
               
               <div className='singleLabel'>
-                <p className='theLabel'>3D Modeling</p>
+                <p className='theLabel'>3D modeling</p>
               </div>
 
-              
-
-            </div>
+            </section>
 
           </section>
 
 
-          <div id="buttons" className="basicCard">
-           <ColorButton >
-           </ColorButton>
+          <div id="buttons" className="basicCard" style={{gridArea: "box-5"}}>
+          <ColorButton >
+          </ColorButton>
           
           <CounterButton >
           </CounterButton>

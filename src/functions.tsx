@@ -62,17 +62,27 @@ export function CounterButton(){
         
         if(butCheck){
             const counterButton = butCheck as HTMLButtonElement;
-            counterButton.style.backgroundColor= `rgb( ${getRandomInt(0,255)}, ${getRandomInt(0,255)}, ${getRandomInt(0,255)})`;
+            let r_color:number =  getRandomInt(0,255);
+            let g_color:number =  getRandomInt(0,255);
+            let b_color:number =  getRandomInt(0,255);
+            counterButton.style.backgroundColor= `rgb( ${r_color}, ${g_color}, ${b_color})`;
+
+            if(r_color <= 20 || g_color <= 40 || b_color <= 25 ){
+                counterButton.style.color= `rgb( 245, 240, 232)`;
+            }
+            else{
+                counterButton.style.color= `rgb( 0, 0, 0)`;
+            }
         }
     }
 
     return (
         <>
-        <button type="button" id="reset" className="btn" onClick={resetCounter}>
+        <button style={{gridArea: "but-1"}} type="button" id="reset" className="btn" onClick={resetCounter}>
             Reset
         </button>
 
-        <button type="button" className="btn" id="count" onClick={handleClick}>
+        <button style={{gridArea: "but-2"}} type="button" className="btn" id="count" onClick={handleClick}>
             You clicked {counter} times
         </button>
         </>
@@ -88,7 +98,8 @@ export default function ColorButton(){
 
         //è modo SAFE di gestire un html element. con if(elCheck) sono coperto in caso di valore "null"
         // cioè se non dovesse trovare il div che cerco
-        const elCheck = document.getElementById("flex_contId") ;
+        const elCheck = document.getElementById("grid_contId") ;
+        
         if(elCheck){
             const mainCard = elCheck as HTMLDivElement;
 
@@ -111,7 +122,7 @@ export default function ColorButton(){
     }
 
     return( //handleClick è passata come PROP a <button>
-        <button type="button" className="btn" onClick={handleClick}>    
+        <button style={{gridArea: "but-3"}} type="button" className="btn" onClick={handleClick}>    
               Click me!
         </button>
 

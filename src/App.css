@@ -1,7 +1,16 @@
-.flex_container {
-  display:flex;
-  flex-direction:column;
-  max-width: 452px;
+.grid_container {
+  display: grid;
+  /*grid-template-columns: 1fr 1fr 1fr;*/
+  grid-auto-columns: 1fr;
+  grid-template-rows: 1fr auto 1fr;
+  gap: 1em;
+  grid-template-areas: 
+  "box-1 box-1 box-1"
+  "box-2 box-3 box-4"
+  "box-2 box-5 box-4 " ;
+  
+  max-width: 65%;
+  /*max-height: 645px;*/
   margin: 0px auto;
  
   padding: 20px 24px;
@@ -9,6 +18,7 @@
   background: #7FDBDA;
   border: 3px solid #000;
   box-shadow: 5px 5px 0 0 #000; 
+
   /*glassmorphism style
   border-radius: 20px;
   background: rgba(255, 255, 255, 0.217);
@@ -37,10 +47,13 @@
 
 #double_avatar{
   display: flex;
-  /*justify-content: space-between;*/
-  justify-content: space-evenly;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  /*justify-content: space-evenly;*/
   flex-wrap: wrap;
-  margin: 0px 0px 20px 0px;
+  margin: 0px;
   /*border-radius: 24px;
   border: solid black 4px;
   padding: 10px;*/
@@ -52,7 +65,7 @@
   font-family: "Outfit", sans-serif;
   font-size: 30px;
   /*margin: auto auto;*/
-  margin: auto 0px auto;
+  
   /*1padding: 6px 0px; */
 }
 
@@ -73,22 +86,34 @@
 
 
 .sections{
-  border-radius: 28px;
+  --section_max_height: 442px;
 
+  border-radius: 28px;
+  max-height: var(--section_max_height);
   border: solid black 4px;
-  margin: 0px 0px 25px 0px;
+  margin: 0px ;
   background: #ffffff;
   z-index: 0;
   
 }
 
-.lang_icons{
+#linkSection{
+  display: flex;
+  flex-direction: column;
+  /*gap: 10px;/
+   
+*/
+}
+
+.techstack_icons{
   display: flex;
   flex-wrap: wrap;
+  gap: 10px;
   flex-direction:row;
-  justify-content:space-between;
-  padding: 10px 24px; 
-
+  justify-content:space-evenly;
+  align-items: center;
+  padding: 24px 24px; 
+    
   /*border: solid black 4px;*/
   background: #ffffff00;
 
@@ -97,6 +122,7 @@
 .icons{
   height: 50px;
   width: 50px;
+
 }
 
 .linkIcons{
@@ -110,7 +136,6 @@
   z-index: -1;
 }
 
-
 .basicCard{
   border-radius: 28px;
   background-color: transparent;
@@ -118,62 +143,46 @@
   margin: 24px 0px;
 }
 
-/*linkSection{
-   background: #ffffff00;
+
+
+/*
+@keyframes expand{
+
+  from {border: (1.5rem, 4%)}
+  to   {padding: 1.8rem min(2.5rem, 5%)}
+  
 }*/
 
 
-@keyframes expand{
-
-  from {padding: 1rem min(1.5rem, 4%)}
-  to   {padding: 1.8rem min(2.5rem, 5%)}
-  /*
-  from {padding: 0px min(1.2rem, 3%) 0px 0px;}
-  to {padding: 0.8rem min(1.2rem, 3%) 0.8rem 0.8rem;}*/
+@keyframes border_expand{
+  from {border: solid black 3px; border-radius: 16px;}
+  to   {border: dashed black 5px; border-radius: 25px;}
 }
 
+
 .singleLink{
-  display: flex;
+  display: flex;  
   justify-content: space-between;
   align-items: center;
-
-  
 
   font-family:"Inter", sans-serif;
   font-size: 23px;
-  border: solid black 3px;
-  border-radius: 16px;
-  /*border-radius: 8px;*/
-  margin: 10px 24px;
-
+  margin: 0px 24px;
   text-align: left;
-  /*padding: 0px min(1.2rem, 3%) 0px 0px;*/
   padding: 0px;
   background: transparent;
   z-index: 1;
- 
-  /*
-  transition: padding 0.2s ;*/  /*on :hover OFF*/
-
-}
-
-.singleLink:hover {
-  /*background-color: #c2d9e9;*/
-  text-decoration: none;
-  /*
-  animation-name: expand;
-  animation-duration: 0.2s;
-  padding: 0.8rem min(1.2rem, 3%) 0.8rem 0.8rem;*/
-  /*border-radius: 12px 0px 0px 12px;*/
-  /*padding: 0.5rem min(1.2rem, 3%) 0.5rem 0px;*/
   
 }
 
 
+/*
+  transition: padding 0.2s ;*/  /*on :hover OFF*/
+
 .singleLabel{
-  display: flex;
+  /*display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: center;*/
   font-family:"Inter", sans-serif;
   font-size: 1.4375rem; /*23px;*/
   border: solid black 3px;
@@ -191,8 +200,7 @@
 }
 
 /*.links{
-  margin: 0px 0px;
-  padding: 0px 0px;
+  border-color: rgb(16, 112, 190);
 
 }*/
 
@@ -202,24 +210,24 @@
 }
 
 a:link{
-
-  min-height: 40px;
-  max-height: 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  min-height: 40px;
+  max-height: 40px;
   color: #000000;
   /*padding: 20px 24px;*/
   /*padding: min(20px, 3.5%) min(24px, 4%);*/
   width: 100%;
   background:transparent;
   text-decoration:none;
-  
-  
   padding: 0.8rem min(1.5rem, 4%);
 
+  margin: 5px 0px;
+  border: solid 3px;
+  border-radius: 16px;
 
-  transition: padding 0.2s ; /*on :hover OFF*/
+  transition: padding 0.2s, border 0.2s; /*when :hover OFF*/
  
 
 }
@@ -227,13 +235,22 @@ a:link{
 a:link:hover{
   color: #000000;
   background-color: rgba(73, 168, 235, 0.299);
-  /*padding: 1rem min(1.5rem, 4%);*/
+
   margin: 0px;
   text-decoration: none;
-  border-radius: 13px;
-  animation-name: expand;
+  border-radius: 25px; 
+  border: dashed black 5px;
+
+  animation-name: border_expand;
   animation-duration: 0.2s;
-  padding: 1.8rem min(2.5rem, 5%);
+
+
+  margin: 5px 0px;
+  /*gap: 7px;*/
+  /*animation-name: expand;
+  animation-duration: 0.2s;
+  padding: 1.8rem min(2.5rem, 5%);*/
+  
   
 }
 
@@ -244,7 +261,9 @@ a:visited {
 }
 
 .btn {
-  font-size: 16px;
+  max-height: 98%;
+
+  font-size: 1em;
   border: 3px solid #000;
   border-radius: 32px;
   background: #FFD23F;
@@ -254,7 +273,6 @@ a:visited {
   /*padding: 12px 20px;*/
   /*padding: min(0.8, 3%) min(6px, 2.5%);*/
   padding: 0.8rem min(0.9rem, 4%);
-  
   
   cursor: pointer;
   transition: all 0.1s ease;
@@ -271,22 +289,35 @@ a:visited {
 }
 
 #buttons{
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0.8em;
+  grid-template-areas: 
+  "but-3 but-3 but-2"
+  "but-1 but-1 but-2" ;
   justify-content: space-between;
-  margin: 0px 0px 10px 0px;
+  margin: 0px;
 }
 
-@media (max-width: 500px){
+@media (max-width: 72rem){
 
-  .flex_container{
-    padding: 14px 14px;
+  .grid_container{
+    /*padding: 14px 14px;*/
+    max-width: 452px;
+    grid-template-areas: 
+    "box-1"
+    "box-2"
+    "box-3"
+    "box-4"
+    "box-5";
   }
 
   #name{
     margin: 10px 0px 0px 0px;
   }
 
-  .title2, .singleLink, .singleLabel{
+  .title2, .singleLink, a:link, .singleLabel{
     font-size: 1.125rem;
   }
 
@@ -300,7 +331,7 @@ a:visited {
   }
 
   .btn{
-    margin: 0px 0px 24px 0px;
+    padding: 18px 16px;
   }
 
 
@@ -326,24 +357,7 @@ a:visited {
 }*/
 
 /*
-.counter {
-  font-size: 16px;
-  padding: 5px 10px;
-  border-radius: 5px;
-  color: var(--accent);
-  background: var(--accent-bg);
-  border: 2px solid transparent;
-  transition: border-color 0.3s;
-  margin-bottom: 24px;
 
-  &:hover {
-    border-color: var(--accent-border);
-  }
-  &:focus-visible {
-    outline: 2px solid var(--accent);
-    outline-offset: 2px;
-  }
-}
 
 .hero {
   position: relative;
