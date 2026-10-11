@@ -10,7 +10,7 @@
   "box-2 box-5 box-4 " ;
   
   max-width: 65%;
-  /*max-height: 645px;*/
+  /*max-height: 610px;*/
   margin: 0px auto;
  
   padding: 20px 20px;
@@ -98,8 +98,10 @@
 }
 
 #linkSection{
-  display: flex;
-  flex-direction: column;
+/*  display: flex;
+  flex-direction: column;*/
+  gap: 10px;
+  padding: 24px 24px; 
   /*gap: 10px;/
    
 */
@@ -137,11 +139,14 @@
 }
 
 .basicCard{
- 
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   border-radius: 28px;
   background-color: transparent;
   text-align: right;
-  margin: 24px 0px;
+  padding: 24px 24px; 
+  margin: 0px;
 }
 
 
@@ -157,7 +162,7 @@
 
 @keyframes border_expand{
   from {border: solid black 3px; border-radius: 16px;}
-  to   {border: dashed black 5px; border-radius: 25px;}
+  to   {border: dashed black 3px; border-radius: 25px;}
 }
 
 
@@ -168,7 +173,6 @@
 
   font-family:"Inter", sans-serif;
   font-size: 23px;
-  margin: 0px 24px;
   text-align: left;
   padding: 0px;
   background: transparent;
@@ -188,7 +192,7 @@
   font-size: 1.4375rem; /*23px;*/
   border: solid black 3px;
   border-radius: 16px;
-  margin: 10px 24px;
+  /*margin: 10px 24px;*/
   /*padding: 0px 24px;      1rem = 16px*/
   
   padding: 0.5rem min(1.5rem, 4%);
@@ -224,7 +228,7 @@ a:link{
   text-decoration:none;
   padding: 0.8rem min(1.5rem, 4%);
 
-  margin: 5px 0px;
+  /*margin: 5px 0px;*/
   border: solid 3px;
   border-radius: 16px;
 
@@ -237,16 +241,16 @@ a:link:hover{
   color: #000000;
   background-color: rgba(73, 168, 235, 0.299);
 
-  margin: 0px;
+  
   text-decoration: none;
   border-radius: 25px; 
-  border: dashed black 5px;
+  border: dashed black 3px;
 
   animation-name: border_expand;
   animation-duration: 0.2s;
 
 
-  margin: 5px 0px;
+  /*margin: 5px 0px;*/
   /*gap: 7px;*/
   /*animation-name: expand;
   animation-duration: 0.2s;
@@ -300,7 +304,7 @@ a:visited {
   "but-3 but-3 but-2"
   "but-1 but-1 but-2" ;
   justify-content: space-between;
-  margin: 0px;
+  padding: 0px;
 }
 
 @media (max-width: 72rem){
@@ -333,7 +337,7 @@ a:visited {
   }
 
   .basicCard{
-    margin: 14px 14px;
+    margin: 0px;
   }
 
   .title2, .singleLink, a:link, .singleLabel{
@@ -344,26 +348,18 @@ a:visited {
     margin: 10px;
   }
 
-  #buttons{
-    flex-direction: column;
-    margin: 0px;
-  }
-
   .btn{
     border-radius: 2.25rem;
     padding: 16px 16px;
   }
 
-
   .singleLink{
     margin: 0px;
   }
 
-  .singleLabel{
-
-    margin: 5px 0px;
+  a:link{
+    padding: 0.6rem min(1.5rem, 4%);
   }
-
 
 }
 
