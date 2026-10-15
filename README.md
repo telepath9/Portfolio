@@ -1,4 +1,3 @@
-### My portfolio made with
-# React + TypeScript + Vite
-
+### My [portfolio](https://telepath9.github.io/Portfolio/) made with
+# React⚛️ + Vite⚡+ TypeScript
 
