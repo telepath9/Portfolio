@@ -164,8 +164,13 @@
 
 
 @keyframes border_expand{
-  from {border: solid black 3px; border-radius: 16px;}
-  to   {border: dashed black 3px; border-radius: 25px;}
+  from {border: solid black 3px; border-radius: 16px; padding: 0.8rem min(1.5rem, 4%);}
+  to   {border: dashed black 3px; border-radius: 25px; padding: 0.8rem min(1.8rem, 6%);}
+}
+
+@keyframes border_expand_mobile{
+  from {border: solid black 3px; border-radius: 16px;  padding: 0.6rem min(1.5rem, 4%);}
+  to   {border: dashed black 3px; border-radius: 25px; padding: 0.6rem min(1.8rem, 6%);}
 }
 
 
@@ -223,7 +228,6 @@ a:link{
   min-height: 40px;
   max-height: 40px;
   color: #000000;
-  /*padding: 20px 24px;*/
   /*padding: min(20px, 3.5%) min(24px, 4%);*/
   width: 100%;
   background:transparent;
@@ -250,13 +254,10 @@ a:link:hover{
 
   animation-name: border_expand;
   animation-duration: 0.2s;
+  padding: 0.8rem min(1.8rem, 6%);
 
+ 
 
-  /*margin: 5px 0px;*/
-  /*gap: 7px;*/
-  /*animation-name: expand;
-  animation-duration: 0.2s;
-  padding: 1.8rem min(2.5rem, 5%);*/
   
   
 }
@@ -315,7 +316,7 @@ a:visited {
   }
 }
 
-@media (max-width: 72rem){
+@media(max-width: 72rem){
 
   .grid_container{
     grid-template-rows: 0.5fr auto 1fr;
@@ -376,6 +377,12 @@ a:visited {
 
   a:link{
     padding: 0.6rem min(1.5rem, 4%);
+  }
+
+  a:link:hover{
+    animation-name: border_expand_mobile;
+    animation-duration: 0.2s;
+    padding: 0.6rem min(1.8rem, 6%);
   }
 
 }
