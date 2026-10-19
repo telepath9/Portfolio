@@ -23,156 +23,47 @@ export default function Avatar({logoPath}: {logoPath:string}){
 //passare props MODO-2: per quando devi passare più PROPS e vuoi tenere ordine!!!!!
 
 interface logoProps {
-  /** The text to display inside the button */
   logoPath: string;
-  /** Whether the button can be interacted with */
-  size: number;
+  size: number; //img size
 }
 
-export function Avatar({logoPath, size}: logoProps){ //default che vuol dire???
+export function Avatar({logoPath, size}: logoProps){ 
     return(
 
-        <img src={logoPath} alt= "telepath_logo" width={size} height={size}
-        />
+        <img src={logoPath} alt= "telepath_logo" width={size} height={size}/>
 
     );
 }
-/*
-export function SVGcomponent(){
+
+interface svgProps{
+  svg_id: string;
+  name_to_display: string;
+  size: number;
+}
+
+export function SVGcomponent({svg_id, name_to_display, size}: svgProps){
+
+    const href_string:string = "#"+svg_id;
+    
+
+    return(
+      <>
+        <div className='svg_flexcontainer'>
+        <svg width={size} height={size}>
+          <use href={href_string}/>
+        </svg>
+        <p className='svg_descrip'>{name_to_display}</p>
+        </div>
+      </>
+
+
+    );
+ 
 
 }
 
-const SVGComponent = (props) => (
-  <svg
-    width={820}
-    height={462}
-    xmlnsXlink="http://www.w3.org/1999/xlink"
-    xmlns="http://www.w3.org/2000/svg"
-    {...props}
-  >
-    <defs>
-      <linearGradient id="c">
-        <stop
-          style={{
-            stopColor: "#fff",
-            stopOpacity: 1,
-          }}
-          offset={0}
-        />
-      </linearGradient>
-      <linearGradient id="b">
-        <stop
-          style={{
-            stopColor: "#fff",
-            stopOpacity: 1,
-          }}
-          offset={0}
-        />
-      </linearGradient>
-      <linearGradient id="a">
-        <stop
-          style={{
-            stopColor: "#a30000",
-            stopOpacity: 1,
-          }}
-          offset={0}
-        />
-      </linearGradient>
-      <linearGradient
-        xlinkHref="#a"
-        id="d"
-        x1={141.252}
-        y1={164.263}
-        x2={245.752}
-        y2={164.263}
-        gradientUnits="userSpaceOnUse"
-        gradientTransform="matrix(4.46377 0 0 4.46377 -432.746 -502.231)"
-      />
-      <linearGradient
-        xlinkHref="#c"
-        id="e"
-        x1={295.035}
-        y1={231.211}
-        x2={566.08}
-        y2={231.211}
-        gradientUnits="userSpaceOnUse"
-      />
-    </defs>
-    <circle
-      style={{
-        fill: "url(#d)",
-        fillOpacity: 1,
-        stroke: "#fff",
-        strokeWidth: 15.623,
-        strokeDasharray: "none",
-        strokeOpacity: 1,
-        strokeDashoffset: 0,
-      }}
-      cx={431}
-      cy={231}
-      r={223.188}
-    />
-    <text
-      xmlSpace="preserve"
-      style={{
-        fontStyle: "normal",
-        fontVariant: "normal",
-        fontWeight: 400,
-        fontStretch: "normal",
-        fontSize: "380.908px",
-        fontFamily: "Consolas",
-        InkscapeFontSpecification: "'Consolas, Normal'",
-        fontVariantLigatures: "normal",
-        fontVariantCaps: "normal",
-        fontVariantNumeric: "normal",
-        fontVariantEastAsian: "normal",
-        fill: "url(#e)",
-        fillOpacity: 1,
-        stroke: "#fff",
-        strokeWidth: 6.696,
-        strokeLinecap: "butt",
-        strokeLinejoin: "round",
-        strokeDasharray: "none",
-        strokeDashoffset: 0,
-        strokeOpacity: 1,
-      }}
-      x={286.666}
-      y={352.756}
-    >
-      <tspan
-        x={286.666}
-        y={352.756}
-        dx="0 -67.457237"
-        style={{
-          fontStyle: "normal",
-          fontVariant: "normal",
-          fontWeight: 400,
-          fontStretch: "normal",
-          fontSize: "380.908px",
-          fontFamily: "Consolas",
-          InkscapeFontSpecification: "'Consolas, Normal'",
-          fontVariantLigatures: "normal",
-          fontVariantCaps: "normal",
-          fontVariantNumeric: "normal",
-          fontVariantEastAsian: "normal",
-          fill: "url(#e)",
-          fillOpacity: 1,
-          stroke: "#fff",
-          strokeWidth: 6.696,
-          strokeLinecap: "butt",
-          strokeLinejoin: "round",
-          strokeDasharray: "none",
-          strokeDashoffset: 0,
-          strokeOpacity: 1,
-        }}
-      >
-        {"t."}
-      </tspan>
-    </text>
-  </svg>
-);
-export SVGComponent;
-*/
+
+
 
 export function CounterButton(){
 
