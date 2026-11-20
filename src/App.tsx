@@ -20,6 +20,114 @@ function App() {
 
 
       <svg style={{display: "none"}}>
+
+        {/* make a better SVG logo!!!
+        <symbol id="teleLogo2" viewBox="0 0 120 120" >
+          <defs>
+            <linearGradient id="b">
+            <stop
+              style={{
+                stopColor: "#ee0000",
+                stopOpacity: 1,
+              }}
+              offset={0}
+            />
+            </linearGradient>
+            <linearGradient id="a">
+              <stop
+                style={{
+                  stopColor: "#a30000",
+                  stopOpacity: 1,
+                }}
+                offset={0}
+              />
+            </linearGradient>
+            <linearGradient
+            xlinkHref="#a"
+            id="c"
+            x1={141.252}
+            y1={164.263}
+            x2={245.752}
+            y2={164.263}
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="translate(-432.746 -502.231)scale(4.46377)"/>
+            <linearGradient
+              xlinkHref="#b"
+              id="d"
+              gradientUnits="userSpaceOnUse"
+              x1={295.035}
+              y1={231.211}
+              x2={566.08}
+              y2={231.211}/>
+              </defs>
+              <circle
+                style={{
+                  fill: "#a30000",
+                  fillOpacity: 1,
+                  stroke: "white",
+                  strokeWidth: 15.623,
+                  strokeDasharray: "none",
+                  strokeDashoffset: 0,
+                  strokeOpacity: 1,
+              }}
+            cx={431}
+            cy={231}
+            r={223.188}/>
+            <text
+            xmlSpace="preserve"
+            style={{
+              fontStyle: "normal",
+          fontVariant: "normal",
+          fontWeight: 400,
+          fontStretch: "normal",
+          fontSize: "380.908px",
+          fontFamily: "Consolas",
+          fontVariantLigatures: "normal",
+          fontVariantCaps: "normal",
+          fontVariantNumeric: "normal",
+          fontVariantEastAsian: "normal",
+          fill: "url(#d)",
+          fillOpacity: 1,
+          stroke: "#ff0000",
+          strokeWidth: 6.696,
+          strokeLinecap: "butt",
+          strokeLinejoin: "round",
+          strokeDasharray: "none",
+          strokeDashoffset: 0,
+          strokeOpacity: 1,
+        }}
+        x={286.666}
+        y={352.756}>
+          <tspan
+            x={286.666}
+            y={352.756}
+            dx="0 -67.457237"
+            style={{
+              fontStyle: "normal",
+              fontVariant: "normal",
+              fontWeight: 400,
+              fontStretch: "normal",
+              fontSize: "380.908px",
+              fontFamily: "Consolas",
+              fontVariantLigatures: "normal",
+              fontVariantCaps: "normal",
+              fontVariantNumeric: "normal",
+              fontVariantEastAsian: "normal",
+              fill: "white",
+              fillOpacity: 1,
+              stroke: "white",
+              strokeWidth: 6.696,
+              strokeLinecap: "butt",
+              strokeLinejoin: "round",
+              strokeDasharray: "none",
+              strokeDashoffset: 0,
+              strokeOpacity: 1,
+            }}>
+            {"t."}
+            </tspan>
+          </text>
+        </symbol> */}
+
         <symbol id="c_icon" fill="none" viewBox="0 0 600 600">
           <path fill="#A9B9CB" d="M566.6 176.4q0-15-6.5-26.7a51 51 0 0 0-19.3-18.8L327.8 8.1a52 52 0 0 0-56.7.5C242.8 25.3 101.3 106.5 59 131a49 49 0 0 0-25.7 45.5v247.2q0 14.8 6.2 26.2A51 51 0 0 0 59.2 469c42.1 24.4 183.6 105.6 211.9 122.3a52 52 0 0 0 56.7.5l213-122.8a51 51 0 0 0 19.6-19.4 53 53 0 0 0 6.3-26.1z"/>
           <path fill="#7F8B99" d="M327.3 8.6a52 52 0 0 0-56.6.6c-28.2 16.6-169.5 97.5-211.6 122a49 49 0 0 0-25.7 45.3V423a53 53 0 0 0 6.2 26A51 51 0 0 0 59 468.5l42 24.2L491 103z"/>
@@ -75,6 +183,23 @@ function App() {
           <path fill="#00D8FF" d="M493.3 206.1q-9.3-3.2-19.3-6l3-13.2c14.6-71 5-128.2-27.6-147-31.3-18-82.5.7-134.2 45.7q-7.5 6.6-15 13.7l-9.9-9.1c-54.1-48.1-108.5-68.4-141-49.5-31.3 18-40.6 71.8-27.4 139q1.8 9.8 4.4 20-11.5 3.2-22.2 7C40.6 228.6 0 263.4 0 299.4c0 37.2 43.6 74.5 109.7 97q7.9 2.8 16.2 5.2-2.7 11-4.7 21.4c-12.5 66-2.7 118.6 28.5 136.5 32.2 18.6 86.2-.5 138.9-46.5q6.2-5.4 12.5-11.5 8.1 7.8 16.2 14.8c51 43.8 101.4 61.6 132.5 43.5 32.2-18.6 42.7-75 29.1-143.6q-1.5-7.9-3.6-16l11.2-3.5C555.2 374 600 337.2 600 299.5c0-36.1-41.9-71-106.7-93.4m-14.9 166.4-10 3.1q-11.7-36.2-30.5-76a601 601 0 0 0 29.2-74.9q9.3 2.7 17.9 5.6c55.5 19.2 89.4 47.4 89.4 69.2 0 23.2-36.6 53.3-96 73m-24.6 48.8a217 217 0 0 1 2.8 79.2c-3.5 19.3-10.7 32.1-19.6 37.2-19 11-59.3-3.2-103-40.8q-7.5-6.5-15-13.7 25.4-27.9 50.3-63.9c29-2.6 56.4-6.8 81.2-12.5zM204.6 536c-18.5 6.5-33.2 6.7-42.1 1.5-19-10.9-26.8-53-16-109.5q1.7-9.8 4.3-20a603 603 0 0 0 80.8 11.7 624 624 0 0 0 51.6 63.7q-5.8 5.5-11.5 10.5a217 217 0 0 1-67.1 42M118 372.3a217 217 0 0 1-70-37.1c-14.9-12.8-22.4-25.4-22.4-35.7 0-21.9 32.6-49.7 87-68.7q9.8-3.4 20.6-6.5 11.3 37 29.2 75.8c-12 26.2-22 52.2-29.6 76.9q-7.5-2.2-14.8-4.7M147 175c-11.3-57.7-3.8-101.1 15-112 20.1-11.7 64.5 4.9 111.3 46.4l9 8.3a614 614 0 0 0-51 63.3 626 626 0 0 0-80.2 12.4q-2.3-9.3-4-18.4m258.8 63.9q-9-15.5-18.2-30 28.8 3.6 54.7 9.5A548 548 0 0 1 423 270a892 892 0 0 0-17.3-31.2M300.3 136a548 548 0 0 1 35.3 42.6 755 755 0 0 0-71 0 566 566 0 0 1 35.7-42.6M194 239a757 757 0 0 0-17 31 566 566 0 0 1-19-52q25.6-5.8 54.4-9.3Q203 223.5 194 239m19 153a545 545 0 0 1-55.4-8.9 576 576 0 0 1 19.5-53 754 754 0 0 0 35.8 62m87.9 72.7a576 576 0 0 1-36.1-43.2 895 895 0 0 0 71.3 0 545 545 0 0 1-35.2 43.2m122.3-135.5q12 27.5 20.2 52.8-26.2 6-56 9.5a896 896 0 0 0 35.8-62.3m-39.6 19q-14 24.4-28.8 46.5a772 772 0 0 1-109.2.2 727 727 0 0 1-55-94.9 720 720 0 0 1 54.6-94.7 726 726 0 0 1 109.4 0 772 772 0 0 1 54.8 94.3q-11.7 24.2-25.8 48.6m53-286.2c20 11.6 27.8 58.3 15.2 119.6l-2.7 12a614 614 0 0 0-80.2-12.8 602 602 0 0 0-50.8-63.3l14-12.6c44.3-38.6 85.7-53.8 104.6-43M300 245.9a53.6 53.6 0 1 1 0 107.2 53.6 53.6 0 0 1 0-107.2"/>
         </symbol>
 
+        <symbol id="nodejs_icon" fill="none" viewBox="0 0 600 600">
+          <path fill="#539E43" d="M300 600q-12.4-.2-23.2-6l-73.3-43.6c-11-6-5.5-8.3-2.2-9.4 15-5 17.7-6 33.1-14.9 1.7-1 3.9-.5 5.5.6l56.2 33.6c2.2 1.1 5 1.1 6.7 0L522.7 433q3.3-1.8 3.3-6V172.7c0-2.7-1.1-5-3.3-6L302.7 40c-2.1-1.1-4.9-1.1-6.6 0L76.2 166.7c-2.2 1.1-3.3 3.9-3.3 6.1V427c0 2.2 1.1 5 3.3 6l60 34.8c32.6 16.5 53-2.7 53-22V194.9c0-3.4 2.8-6.7 6.6-6.7H224c3.3 0 6.6 2.8 6.6 6.7v250.8c0 43.5-23.7 68.9-65 68.9-12.7 0-22.6 0-50.7-13.8l-57.9-33a47 47 0 0 1-23.1-40.3V173.4c0-16.6 8.8-32 23.1-40.3L277 5.8a49 49 0 0 1 46.3 0L543 133a47 47 0 0 1 23.1 40.3v254c0 16.6-8.8 32-23.1 40.3L323 595c-7.1 3.3-15.4 5-23.1 5m67.8-174.7c-96.5 0-116.3-44.1-116.3-81.6 0-3.3 2.7-6.6 6.6-6.6h28.7c3.3 0 6 2.2 6 5.5 4.4 29.2 17.1 43.5 75.6 43.5 46.3 0 66.1-10.4 66.1-35.2 0-14.4-5.5-24.9-77.7-32-60.1-6-97.6-19.3-97.6-67.3 0-44.6 37.5-71 100.3-71 70.6 0 105.3 24.2 109.7 77q0 2.6-1.6 5c-1.1 1.2-2.8 2.3-4.4 2.3h-28.7a6.5 6.5 0 0 1-6-5c-6.7-30.3-23.8-40.2-69-40.2-50.7 0-56.7 17.6-56.7 30.8 0 16 7.1 21 75.5 29.8C446 289 478 301.8 478 349.2c-.5 48.5-40.2 76-110.2 76"/>
+        </symbol>
+
+        <symbol id="express_icon" fill="#0A0A0A" viewBox="0 0 24 24">
+          <title>Express</title><path d="M12.262 16.666h1.146l6.975-9.325H19.22zm9.778 1.441v.004l-4.334-5.706-.557.74 4.873 6.682H.945V4.173h9.505l5.026 6.7.574-.772-4.374-5.928h.003l-.719-.945H0v17.544h24zM10.917 8.705a3.8 3.8 0 0 0-1.292-1.183q-.796-.45-1.916-.45c-.746 0-1.37.14-1.906.424a3.76 3.76 0 0 0-1.31 1.12 4.9 4.9 0 0 0-.75 1.581 7.17 7.17 0 0 0 0 3.696c.148.567.402 1.101.75 1.573a3.5 3.5 0 0 0 1.31 1.066q.803.39 1.906.389 1.77 0 2.739-.868.966-.867 1.328-2.457h-1.139q-.271 1.084-.977 1.734-.704.651-1.952.65-.812 0-1.392-.342a3.1 3.1 0 0 1-.957-.869 3.5 3.5 0 0 1-.551-1.182 5 5 0 0 1-.17-1.133 9 9 0 0 0-.015-.286 4.5 4.5 0 0 1 .015-.829c.047-.418.147-.83.296-1.223A3.7 3.7 0 0 1 5.54 9.05a2.9 2.9 0 0 1 .922-.742q.541-.28 1.246-.28c.47 0 .869.093 1.23.28q.541.281.922.742.379.461.587 1.057t.225 1.246H5.625l.004.957h6.182a7.3 7.3 0 0 0-.18-1.924 4.9 4.9 0 0 0-.715-1.68z"/> 
+        </symbol>
+
+        <symbol id="postman_icon" fill="none" viewBox="0 0 600 600">
+           <g clip-path="url(#devicon-postman-icon-1-a)"><path fill="#FF6C37" d="M597.5 338a300 300 0 1 0-595-76.3 300 300 0 0 0 595 76.4"/><path fill="#fff" d="M408.3 192.6 281.7 319.2 246 283.5C370.5 159 382.8 169.8 408.3 192.6"/><path fill="#FF6C37" d="M281.7 322.2q-1.3 0-2.1-1l-36-35.6a3 3 0 0 1 0-4.2c126.6-126.6 139.8-114.6 166.5-90.6q.9.8.9 2.1t-1 2.1L283.6 321.3c-.3.6-1.2.9-1.8.9m-31.5-38.7 31.5 31.5 122-122c-22.1-19.9-37.1-25.9-153.5 90.5"/><path fill="#fff" d="M318 355.5 283.5 321l126.6-126.6c33.9 34.2-16.8 89.7-92.1 161"/><path fill="#FF6C37" d="M318 358.5q-1.3 0-2.1-1l-34.5-34.4q-.7-.8-.6-2.1t.9-2.1l126.6-126.6c1.2-1.2 3-1.2 4.2 0 7.8 7.2 12 17.4 11.7 28-.6 33.2-38.4 75.5-103.8 137.3q-1.4.9-2.4.9M287.7 321c19.2 19.5 27.3 27.3 30.3 30.3 50.4-48 99.3-97.2 99.6-131a32 32 0 0 0-7.8-21.7z"/><path fill="#fff" d="m246.6 284.4 25.5 25.5q.9.9 0 1.8-.3.4-.6.3l-52.8 11.4a5 5 0 0 1-5.7-4.2q-.3-2.4 1.2-3.9l30.6-30.6c.6-.6 1.5-.9 1.8-.3"/><path fill="#FF6C37" d="M217.8 326.4a8 8 0 0 1-7.8-8.1q.1-3.3 2.4-5.7L243 282a4.6 4.6 0 0 1 6 0l25.5 25.5c1.8 1.5 1.8 4.2 0 6q-.9.8-2 1.2l-53 11.3zm28-38.7L216.2 317q-1 1-.3 2.4t2.1.9l49.5-10.8z"/><path fill="#fff" d="M475.2 122.4a48.4 48.4 0 0 0-68.7 1.5 48.4 48.4 0 0 0 1.5 68.7 48.5 48.5 0 0 0 58.8 6.6L432.6 165z"/><path fill="#FF6C37" d="M441.6 209.1a51.6 51.6 0 1 1 35.7-88.8q.9.8.9 2.1t-1 2.1L436.9 165l31.8 31.8c1.2 1.2 1.2 3 0 4.2l-.6.6a51 51 0 0 1-26.4 7.5m0-96.9a45 45 0 0 0-45.3 45.6 45 45 0 0 0 65.7 40.5l-31.5-31.2q-1-.8-1-2 0-1.4 1-2.2l40.2-40.2a45 45 0 0 0-29.1-10.5"/><path fill="#fff" d="m476 123.3-.5-.6-43 42.3 34 34a48 48 0 0 0 9.6-75.6"/><path fill="#FF6C37" d="M466.8 202.2q-1.4 0-2.1-.9l-34.2-34.2q-1-.8-1-2 0-1.4 1-2.2l42.6-42.6c1.2-1.2 3-1.2 4.2 0l.9.6a52 52 0 0 1-9.6 80.7zm-30-37.2 30.3 30.3a45.7 45.7 0 0 0 8.1-68.4z"/><path fill="#fff" d="M413.4 198a18.5 18.5 0 0 0-26.1 0L274.2 311.1l18.9 18.9 119.7-105a18.5 18.5 0 0 0 1.8-26q-.9-.6-1.2-1"/><path fill="#FF6C37" d="M292.8 333q-1.3 0-2.1-.9l-18.9-18.9a3 3 0 0 1 0-4.2l113-113a21.4 21.4 0 0 1 30.4 0 21.4 21.4 0 0 1 0 30.2l-1 1L294.7 332q-.4.9-1.8.9M278.5 311l14.7 14.7 117.6-103.2a15.6 15.6 0 0 0 1.8-21.9 15.6 15.6 0 0 0-22-1.8q-.2.4-1.1 1z"/><path fill="#fff" d="M187.5 439.8q-1.9 1-1.5 3l5.1 21.6c1.2 3-.6 6.6-3.9 7.5a6 6 0 0 1-6.6-1.8l-33-32.7 107.7-107.7 37.2.6 25.2 25.2c-6 5-42.3 40.2-130.2 84.3"/><path fill="#FF6C37" d="M185.1 474.9c-2.4 0-4.8-1-6.3-2.7l-32.7-32.7q-.9-.8-.9-2.1t1-2.1l107.6-107.7q1-1 2.1-1l37.2.7q1.3 0 2.1.9l25.2 25.2q.9 1 .9 2.4t-1.2 2l-2.1 1.9c-31.8 27.9-75 55.8-128.7 82.5l5.1 21.3c1 3.9-.9 8-4.5 10.2q-2.6 1.3-4.8 1.2m-33-37.5 31 30.6a3 3 0 0 0 4.1 1.2c1.5-1 2.1-2.7 1.2-4.2l-5-21.6c-.7-2.7.5-5.1 3-6.3 53-26.7 95.9-54.3 127.4-81.6l-22.2-22.2-34.5-.6z"/><path fill="#fff" d="m122.1 463.2 25.8-25.8 38.4 38.4-61.2-4.2a5 5 0 0 1-4.2-5.4q0-2 1.2-3"/><path fill="#FF6C37" d="m186.3 478.5-61.5-4.2c-4.5-.3-7.5-4.2-7.2-8.7q.4-2.9 2.4-4.8l25.8-25.8c1.2-1.2 3-1.2 4.2 0l38.4 38.4q1.5 1.3.6 3.3-.9 1.8-2.7 1.8m-38.4-37-23.7 23.8c-.9.6-.9 2 0 2.7q.4.5 1.2.6l53.1 3.6zm96.9-98a3 3 0 0 1-3-3q0-1.4 1-2.1l29-29.1c1.2-1.2 3-1.2 4.2 0l18.9 18.9q1.3 1.3.9 3-.5 1.5-2.4 2l-48 10.3zm29.1-28-19.8 19.9 32.4-7z"/><path fill="#fff" d="m292.5 330.3-33 7.2a4.5 4.5 0 0 1-4.2-7.5l18.3-18.3z"/><path fill="#FF6C37" d="M259 340.5a7.4 7.4 0 0 1-7.6-7.5c0-2.1 1-4 2.1-5.4l18.3-18.3c1.2-1.2 3-1.2 4.2 0l18.9 18.9q1.3 1.3.9 3-.5 1.5-2.4 2l-33 7.3zm15-25-16.3 16.3q-.8.9-.3 1.8t1.8.9l27.6-6zm202.4-163.4a3.4 3.4 0 0 0-4.5-2c-1.8.5-2.7 2.6-2.1 4.4l.3 1a11 11 0 0 1-1.2 11.3 3.6 3.6 0 0 0 .3 4.8c1.5 1.2 3.6 1 4.8-.6a18 18 0 0 0 2.4-18.9"/></g><defs><clipPath id="devicon-postman-icon-1-a"><path fill="#fff" d="M0 0h600v600H0z"/></clipPath></defs>
+        </symbol>
+
+        <symbol id="postgres_icon" fill="none" viewBox="0 0 600 600">
+          <path fill="#000" d="M589.4 359.4a30 30 0 0 0-24.5-19.7q-8.3-1.3-19.5 1a176 176 0 0 1-30.2 4c27-45.5 49-97.5 61.6-146.3 20.4-79.1 9.5-115.1-3.3-131.4-33.7-43.1-83-66.3-142.3-67-31.7-.4-59.5 5.9-74 10.4q-20.3-3.6-43.3-4-43-.6-75.4 18.6c-12-4-31-9.7-53.2-13.4-52-8.5-94-1.9-124.7 19.8C23.4 57.7 6.2 103.3 9.4 167c1 20.2 12.3 81.7 30.1 140A484 484 0 0 0 72 390c16 30.3 33.1 48.2 52.3 54.6a52 52 0 0 0 51-11q3.8 4.6 10.7 9.2 9.2 5.7 20.3 8.5c25.8 6.4 50 4.8 70.7-4.2q0 5.5.3 10.2l.4 14.2c1.3 30.5 3.3 54.2 9.5 70.8l1.2 3.7c3.1 9.4 8.2 25.1 21.3 37.4a63 63 0 0 0 44.8 16.7q11.4-.2 20.9-2.3c22.4-4.8 47.8-12.1 66.2-38.3 17.4-24.8 25.8-62 27.3-120.8l.6-4.7.4-3.1 4 .3 1.1.1a162 162 0 0 0 67.8-11.7c13.5-6.3 56.8-29.2 46.6-60"/><path fill="#336791" d="M550.5 365.4c-67.8 14-72.5-9-72.5-9 71.6-106.1 101.5-240.9 75.7-273.9-70.4-90-192.3-47.4-194.4-46.3l-.6.1a242 242 0 0 0-45.2-4.7c-30.7-.5-54 8-71.6 21.4 0 0-217.5-89.6-207.4 112.7 2.2 43 61.7 325.6 132.7 240.2 26-31.2 51-57.6 51-57.6a66 66 0 0 0 43 11l1.2-1q-.5 5.7.5 12.1c-18.3 20.5-12.9 24-49.5 31.6-37 7.6-15.2 21.2-1 24.7 17.2 4.3 57 10.4 83.9-27.2l-1.1 4.3c7.2 5.7 12.2 37.3 11.3 66-.8 28.6-1.4 48.3 4.3 63.6s11.3 50 59.3 39.6c40.2-8.6 61-30.9 63.9-68 2-26.5 6.7-22.6 7-46.3l3.7-11.1c4.3-35.9.7-47.5 25.4-42l6 .4c18.3.9 42-2.9 56-9.4 30.2-14 48-37.3 18.4-31.2"/><path fill="#fff" d="M254.6 185c-6-.9-11.6-.1-14.4 2a5 5 0 0 0-2.2 3.5c-.4 2.5 1.4 5.3 2.5 6.8 3 4 7.5 6.8 12 7.4l1.9.2c7.4 0 14.1-5.8 14.7-10 .7-5.4-7-9-14.5-10m202.4.2c-.6-4.2-8-5.3-15.1-4.4-7 1-13.9 4.2-13.3 8.4.5 3.2 6.3 8.8 13.3 8.8q1 0 1.7-.2a17 17 0 0 0 9.7-5.2c2.5-2.6 3.9-5.5 3.6-7.4"/><path fill="#fff" d="M573 363.8q-4-11.7-24.7-7.4c-41 8.4-55.7 2.6-60.5-1a564 564 0 0 0 72.2-162c6.7-26 10.4-50.2 10.7-69.8q.5-32.5-10.9-47c-30.5-39.1-75.3-60-129.6-60.6-37.3-.4-68.8 9.1-75 11.8a187 187 0 0 0-42-5.4q-42.2-.7-72.3 19.9c-8.7-3.3-31.2-11-58.7-15.4C134.6 19.2 96.8 25 69.8 44c-32.1 22.8-47 63.6-44.1 121.2 1 19.4 12 79 29.4 136 23 75.1 47.9 117.7 74 126.4q4.7 1.7 10.6 1.8c9.6 0 21.3-4.4 33.5-19 20.3-24.4 39.2-44.8 46.2-52.3a74 74 0 0 0 33.2 9v.9l-5.8 7.2c-8 10.2-9.7 12.3-35.5 17.6-7.4 1.5-26.9 5.6-27.2 19.3-.3 14.9 23 21.2 25.8 21.8q13.9 3.5 26.7 3.5c20.8 0 39-6.8 53.6-20-.5 53.3 1.8 105.8 8.2 121.8 5.2 13.1 18 45.1 58.5 45.1q8.8 0 19.6-2.2c42.2-9 60.5-27.7 67.6-68.8 3.8-22 10.3-74.5 13.4-102.7 6.5 2 14.8 3 23.8 3 18.7 0 40.4-4 54-10.3 15.2-7 42.7-24.5 37.7-39.6M472.5 173.6c-.1 8.3-1.3 15.9-2.5 23.7a234 234 0 0 0-3 27.9c-.3 10.3 1 21.1 2.2 31.5 2.6 21 5.1 42.6-4.9 64a83 83 0 0 1-4.4-9.2q-2-4.5-7.7-14.6c-14.6-26.1-48.8-87.3-31.3-112.3 5.2-7.5 18.4-15.1 51.6-11M432.3 32.8c48.6 1 87 19.3 114.3 54 20.9 26.7-2.1 148.2-68.7 253l-2-2.6-.8-1c17.2-28.5 13.8-56.6 10.8-81.5-1.2-10.2-2.4-19.9-2-29 .2-9.6 1.5-17.8 2.7-25.8 1.5-9.8 3-20 2.6-32q.6-1.9.3-4.5c-1-11.5-14.2-46-41-77a186 186 0 0 0-65-49 220 220 0 0 1 48.8-4.6m-272 367c-13.5 16.1-22.8 13-25.8 12-19.9-6.7-43-48.7-63.3-115.4-17.6-57.7-28-115.7-28.8-132C40 113 52.4 77.1 79.5 58c44.2-31.4 117-12.6 146.1-3.1l-1.2 1.2c-48 48.4-46.8 131.1-46.7 136.2q0 2.9.4 8.5c.8 14 2.3 39.8-1.8 69.1a87 87 0 0 0 29 78.8c-8.2 8.8-26 28.3-45 51.1m51.2-68.4a71 71 0 0 1-18.5-59.2c4.3-31 2.7-58 1.8-72.5q0-3-.3-5.2c7-6.2 39.5-23.6 62.6-18.3q15.8 3.5 19.7 22c13.9 64 1.8 90.7-7.8 112.2q-3 6.5-5.5 12.9l-1.2 3.3q-5 12.7-8 23.8a60 60 0 0 1-42.8-19m2.4 86.4a37 37 0 0 1-11.2-4.9c2-1 5.7-2.2 12-3.5 30.3-6.3 35-10.7 45.3-23.7q3.3-4.4 8.7-10.5c5.5-6.1 8-5.1 12.6-3.2 3.7 1.5 7.3 6.1 8.7 11.2.7 2.4 1.5 7-1 10.6-21.5 30-52.7 29.6-75 24m159 148c-37.1 8-50.3-11-59-32.7-5.5-14-8.3-77.2-6.3-146.9q0-1.4-.4-2.7l-1-4.9a34 34 0 0 0-18.5-22.1 26 26 0 0 0-17-2q2.6-10 7.3-22l1.3-3.4q2.1-5.6 5-11.8c10.1-22.5 24-53.2 9-122.7-5.7-26-24.5-38.7-53-35.7a122 122 0 0 0-45 15c2.1-26.2 10.3-75.1 41-106.1 19.4-19.5 45.2-29.2 76.5-28.6 61.9 1 101.6 32.7 124 59.2a188 188 0 0 1 33.8 58q-47-4.6-63.4 18.5c-23.5 33.7 12.8 98.9 30.3 130.2 3.2 5.8 6 10.7 6.9 12.8 5.6 13.8 13 23 18.4 29.8l4.5 5.8c-9.5 2.7-26.6 9-25 40.7-1.3 15.8-10.2 90-14.7 116.3-6 34.7-18.8 47.6-54.6 55.3m155.3-177.6c-9.7 4.5-26 7.9-41.4 8.6-17 .8-25.7-2-27.8-3.6-1-19.7 6.4-21.8 14.2-24l3.5-1 2.4 1.7q20.7 13.5 72.6 3l.4-.2a93 93 0 0 1-24 15.5"/>
+        </symbol>
+
+
       </svg>
 
 
@@ -84,7 +209,6 @@ function App() {
 
         <div id="double_avatar" style={{gridArea: "box-1"}}> 
           <Avatar logoPath={teleLogo} size={120}></Avatar>
-
           <h2 id="name">Davide Montalbano  <br></br> @telepath</h2>
         </div>
        
@@ -106,7 +230,7 @@ function App() {
             </div>
 
             <div className='singleLink'>
-              <a className="links" href="https://makerworld.com/en/@telepath" >MakerWorld 
+              <a className="links" href="https://makerworld.com/en/@telepath">MakerWorld 
                 <img className="linkIcons" id="bambu" src={bambuIcon} />
               </a>
             </div>  
@@ -125,16 +249,21 @@ function App() {
               My tech stack
             </p>
             <div className="techstack_icons">
-              
-              <SVGcomponent svg_id={"c_icon"} name_to_display={"C"} size={50}></SVGcomponent>
-              <SVGcomponent svg_id={"cpp_icon"} name_to_display={"C++"} size={50}></SVGcomponent>
-              <SVGcomponent svg_id={"java_icon"} name_to_display={"Java"} size={50}></SVGcomponent>
-              <SVGcomponent svg_id={"html_icon"} name_to_display={"HTML"} size={48}></SVGcomponent>
-              <SVGcomponent svg_id={"css_icon"} name_to_display={"CSS"} size={48}></SVGcomponent>
-              <SVGcomponent svg_id={"js_icon"} name_to_display={"JavaScript"} size={46}></SVGcomponent>
-              <SVGcomponent svg_id={"ts_icon"} name_to_display={"TypeScript"} size={46}></SVGcomponent>
-              <SVGcomponent svg_id={"react_icon"} name_to_display={"React"} size={50}></SVGcomponent>
+             
+              <SVGcomponent svg_id={"c_icon"} name_to_display={"C"} size={40}></SVGcomponent>
+              <SVGcomponent svg_id={"cpp_icon"} name_to_display={"C++"} size={40}></SVGcomponent>
+              <SVGcomponent svg_id={"java_icon"} name_to_display={"Java"} size={40}></SVGcomponent>
+              <SVGcomponent svg_id={"html_icon"} name_to_display={"HTML"} size={40}></SVGcomponent>
+              <SVGcomponent svg_id={"css_icon"} name_to_display={"CSS"} size={40}></SVGcomponent>
+              <SVGcomponent svg_id={"js_icon"} name_to_display={"JavaScript"} size={40}></SVGcomponent>
+              <SVGcomponent svg_id={"ts_icon"} name_to_display={"TypeScript"} size={40}></SVGcomponent>
+              <SVGcomponent svg_id={"react_icon"} name_to_display={"React"} size={40}></SVGcomponent>
+              <SVGcomponent svg_id={"nodejs_icon"} name_to_display={"Node.js"} size={40}></SVGcomponent>
+              <SVGcomponent svg_id={"express_icon"} name_to_display={"Express"} size={40}></SVGcomponent>
+              <SVGcomponent svg_id={"postgres_icon"} name_to_display={"PostgreSQL"} size={40}></SVGcomponent>
+              <SVGcomponent svg_id={"postman_icon"} name_to_display={"Postman"} size={40}></SVGcomponent>
 
+                
             </div>
           </section>
 
@@ -176,138 +305,13 @@ function App() {
           <CounterButton >
           </CounterButton>
 
-
-   
           </div>
 
-        
       </div>
-
-
-
 
 
   </>
   )
   }
-
-
-
-
-
-  /*
-  const [count, setCount] = useState(0)
-  return (
-    <>
-    
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div>
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.tsx</code> and save to test <code>HMR</code>
-          </p>
-        </div>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
-
-      <div className="ticks"></div>
-
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <div className="ticks"></div>
-      <section id="spacer"></section>
-    </>
-  )
-}*/
 
 export default App

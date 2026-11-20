@@ -29,9 +29,7 @@ interface logoProps {
 
 export function Avatar({logoPath, size}: logoProps){ 
     return(
-
         <img src={logoPath} alt= "telepath_logo" width={size} height={size}/>
-
     );
 }
 
@@ -44,8 +42,6 @@ interface svgProps{
 export function SVGcomponent({svg_id, name_to_display, size}: svgProps){
 
     const href_string:string = "#"+svg_id;
-    
-
     return(
       <>
         <div className='svg_flexcontainer'>
@@ -55,14 +51,8 @@ export function SVGcomponent({svg_id, name_to_display, size}: svgProps){
         <p className='svg_descrip'>{name_to_display}</p>
         </div>
       </>
-
-
     );
- 
-
 }
-
-
 
 
 export function CounterButton(){
@@ -106,8 +96,8 @@ export function CounterButton(){
             Reset
         </button>
 
-        <button style={{gridArea: "but-2"}} type="button" className="btn" id="count" onClick={handleClick}>
-            You clicked {counter} times
+        <button style={{ width: "160px", maxWidth: "160px",  gridArea: "but-2"}} type="button" className="btn" id="count" onClick={handleClick}>
+            <span>You clicked {counter} times</span>
         </button>
         </>
     );

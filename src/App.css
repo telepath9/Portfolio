@@ -10,7 +10,6 @@
   "box-2 box-5 box-4 " ;
    
   max-width: 65%;
-  /*max-height: 610px;*/
   margin: 0px auto;
  
   padding: 20px;
@@ -29,6 +28,7 @@
   backdrop-filter: blur(5px) saturate(1.2);*/
 }
 
+/*for SVGcomponent */
 .svg_flexcontainer{
   display: flex;
   flex-direction: column;
@@ -38,6 +38,7 @@
 
 }
 
+/*for SVGcomponent */
 .svg_descrip{
   margin:0px;
   font-family: Outfit;
@@ -49,48 +50,22 @@
   text-align: left;
 }
 
-/*
-#title1{
-  font-family: "SpaceGrotesk", sans-serif;
-  font-size:  30px;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
-  margin: 0px 0px 10px 0px;
-  /*border-radius: 24px;
-  border: solid black 4px;
-  padding: 20px;
-}*/
-
 #double_avatar{
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
-
-  /*justify-content: space-evenly;*/
   flex-wrap: wrap;
   margin: 0px;
-  /*border-radius: 24px;
-  border: solid black 4px;
-  padding: 10px;*/
-  /*background: #f5f0e8;*/
-  /*text-align: center;*/
 }
-
-
 
 #name{
   font-family: "Outfit", sans-serif;
   font-size: 30px;
-  /*margin: auto auto;*/
-  
-  /*1padding: 6px 0px; */
+
 }
 
 .title2{
-  /*display: flex;
-  justify-content: space-evenly;*/
   border-radius: 24px 24px 0px 0px;
   border-bottom: solid black 4px;
   padding: 16px 24px;
@@ -105,25 +80,19 @@
 
 
 .sections{
-  --section_max_height: 442px;
-  max-height: var(--section_max_height);
+    height: fit-content;
+  /*--section_max_height: 442px;
+  max-height: var(--section_max_height);*/
   border-radius: 28px;
-
   border: solid black 4px;
   margin: 0px ;
   background: #ffffff;
   z-index: 0;
-  
 }
 
 #linkSection{
-/*  display: flex;
-  flex-direction: column;*/
   gap: 10px;
   padding: 24px 24px; 
-  /*gap: 10px;/
-   
-*/
 }
 
 .techstack_icons{
@@ -135,23 +104,15 @@
   justify-content:space-evenly;
   align-items: center;
   padding: 24px 24px; 
-    
-  /*border: solid black 4px;*/
   background: #ffffff00;
-
 }
 
 .icons{
   height: 50px;
   width: 50px;
-
 }
 
 .linkIcons{
-  /*margin: 0px 12px 0px 0px;*/
-  
-  
-
   margin: 0px;
   height: 45px;
   width: 45px;
@@ -173,10 +134,8 @@
 
 /*
 @keyframes expand{
-
   from {border: (1.5rem, 4%)}
   to   {padding: 1.8rem min(2.5rem, 5%)}
-  
 }*/
 
 
@@ -209,9 +168,6 @@
   transition: padding 0.2s ;*/  /*on :hover OFF*/
 
 .singleLabel{
-  /*display: flex;
-  justify-content: space-between;
-  align-items: center;*/
   font-family:"Outfit", sans-serif;
   font-size: 1.4375rem; /*23px;*/
   border: solid black 3px;
@@ -408,16 +364,3 @@ a:visited {
   background: #ffe0e0;
 }
 
-/* Never forget focus 
-.btn:focus-visible {
-  outline: 3px solid #74B9FF;
-  outline-offset: 3px;
-}*/
-
-/*
-#icon1{
-  outline: solid;
-
-
-
-*/
